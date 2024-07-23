@@ -202,6 +202,7 @@ static struct gendisk *shift_blkdev_create(char * shift_name)
 	return new_disk;
 }
 
+
 static int shift_blkdev_close(char *arg, const struct kernel_param *kp)
 {
 	if(!shift_disk){
@@ -214,6 +215,7 @@ static int shift_blkdev_close(char *arg, const struct kernel_param *kp)
 		return 1;
 	}
 }
+
 
 static int shift_blkdev_name(const char *arg, const struct kernel_param *kp) 
 {
