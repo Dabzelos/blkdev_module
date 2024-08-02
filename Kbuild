@@ -9,6 +9,6 @@ ccflags-y := 	-Wall					\
 		-Werror=format-security			\
 		-Werror=implicit-function-declaration	
 
-blkmod-y := main.o
+blkmod-y := ./main.o ./bin_tree.o
 
 obj-m := blkmod.o
